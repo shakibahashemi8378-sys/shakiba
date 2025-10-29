@@ -1,0 +1,114 @@
+@font-face {
+    font-family: cal;
+    src: url(../Font/calibri.ttf);
+}
+:root {
+    --bs-primary: #fa80bd;
+    --bs-secondary: #ffb6c1;
+    --bs-success: #87ceeb;
+    --bs-info: #98fb98;
+    --bs-warning: #ffd700;
+    --bs-danger: #ffa07a;
+    --bs-light: #fff0f5;
+    --bs-dark: #696969;
+}
+
+body {
+    font-family: cal;
+    background: linear-gradient(135deg, #fff0f5 0%, #e7d1ce 100%);
+    color: #555;
+    padding-top: 20px;
+    min-height: 100vh;
+    text-align: right;
+}
+
+.blinking-header {
+    animation: blink 2s infinite;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff69b4;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    font-size: 2.5rem;
+}
+
+@keyframes blink {
+    0%   { color: #ff5858;}
+    25%  { color: #9fc4e9;}
+    50%  { color: #6af89a;}
+    75%  { color: #f8f882;}
+    100% { color: #fa8ec4;}
+}
+
+.card {
+    transition: transform 0.3s;
+    height: 100%;
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(255, 105, 180, 0.1);
+    background: linear-gradient(45deg, #ff69b4, #ffb6c1) !important;
+    border-radius: 15px;
+}
+
+.section-title {
+    margin: 40px 0 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #ffb6c1;
+    color: #ff69b4;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+footer {
+    margin-top: 60px;
+    padding: 25px 0;
+    background: linear-gradient(45deg, #ffb6c1, #ff69b4);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.btn {
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* استایل کاروسل */
+.carousel {
+    margin: 20px 0;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators button {
+    background-color: #ff69b4;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #ff1493;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none; /* مخفی کردن دکمههای قبلی/بعدی */
+}
